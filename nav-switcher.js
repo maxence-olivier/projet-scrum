@@ -1,6 +1,6 @@
 /* ════════════════════════════════════════════════════════════════
    PostOp Suivi — Switcher universel d'espaces (FAB)
-   Inclus via : <script src="/nav-switcher.js" defer></script>
+   Inclus via : <script src="nav-switcher.js" defer></script>
    À placer juste avant </body> dans index.html / patient.html / medecin.html
    ════════════════════════════════════════════════════════════════ */
 (function () {
@@ -44,9 +44,9 @@
   wrap.id = 'navSwitcher';
   wrap.innerHTML = ''
     + '<div class="nav-switcher-menu" role="menu">'
-    +   '<a href="/" class="nav-switcher-item' + (current==='index'?' current':'') + '" role="menuitem">' + ICON_HOME + '<span>Accueil</span></a>'
-    +   '<a href="/patient.html" class="nav-switcher-item' + (current==='patient'?' current':'') + '" role="menuitem">' + ICON_USER + '<span>Espace Patient</span></a>'
-    +   '<a href="/medecin.html" class="nav-switcher-item' + (current==='medecin'?' current':'') + '" role="menuitem">' + ICON_PULSE + '<span>Espace Médecin</span></a>'
+    +   '<a href="index.html" class="nav-switcher-item' + (current==='index'?' current':'') + '" role="menuitem">' + ICON_HOME + '<span>Accueil</span></a>'
+    +   '<a href="patient.html" class="nav-switcher-item' + (current==='patient'?' current':'') + '" role="menuitem">' + ICON_USER + '<span>Espace Patient</span></a>'
+    +   '<a href="medecin.html" class="nav-switcher-item' + (current==='medecin'?' current':'') + '" role="menuitem">' + ICON_PULSE + '<span>Espace Médecin</span></a>'
     + '</div>'
     + '<button class="nav-switcher-fab" aria-label="Changer d\'espace" aria-haspopup="true">' + ICON_PLUS + '</button>';
 
